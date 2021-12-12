@@ -1,0 +1,686 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "    Given: user on user create page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-12-12T12:26:23.328Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2791000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ticketProject.step_definitions.hooks.lineUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "User can create new user on User List",
+        "description": "",
+        "id": "create-new-user;user-can-create-new-user-on-user-list;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1752000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ticketProject.step_definitions.hooks.gearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enter \"Ayten Nihal\" to the First Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ayten Nihal\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheFirstName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter \"Cengiz\" to the Last Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cengiz\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheLastName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enter \"aytennihal1998@gmail.com\" to the Email Adress",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aytennihal1998@gmail.com\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheEmailAdress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter \"05534304671\" to the Phone Number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05534304671\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePhoneNumber(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enter \"123456\" to the Password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter \"123456\" to the Password Confirmation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePasswordConfirmation(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user select a \"FEMALE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FEMALE\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userSelectA(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user select \"employee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"employee\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userSelect(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click \"Save\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userClick(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should be able to see new user with \"\u003cemailadress\u003e\" under the User List",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cemailadress\u003e\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userShouldBeAbleToSeeNewUserWithUnderTheUserList(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userCreate"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "    Given: user on user create page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-12-12T12:26:28.062Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1579000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ticketProject.step_definitions.hooks.lineUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User can create new user on User List",
+        "description": "",
+        "id": "create-new-user;user-can-create-new-user-on-user-list;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1737000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ticketProject.step_definitions.hooks.gearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enter \"Mustafa Alparslan\" to the First Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mustafa Alparslan\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheFirstName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter \"Cengiz\" to the Last Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cengiz\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheLastName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enter \"mustafa@gmail.com\" to the Email Adress",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mustafa@gmail.com\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheEmailAdress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter \"05534304672\" to the Phone Number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05534304672\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePhoneNumber(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enter \"MAC123456\" to the Password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MAC123456\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter \"MAC123456\" to the Password Confirmation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MAC123456\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePasswordConfirmation(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user select a \"MALE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MALE\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userSelectA(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user select \"employee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"employee\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userSelect(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click \"Save\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userClick(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should be able to see new user with \"\u003cemailadress\u003e\" under the User List",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cemailadress\u003e\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userShouldBeAbleToSeeNewUserWithUnderTheUserList(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userCreate"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "    Given: user on user create page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-12-12T12:26:31.400Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1606000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ticketProject.step_definitions.hooks.lineUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User can create new user on User List",
+        "description": "",
+        "id": "create-new-user;user-can-create-new-user-on-user-list;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1698000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ticketProject.step_definitions.hooks.gearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enter \"Yeni\" to the First Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yeni\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheFirstName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enter \"\" to the Last Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheLastName(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enter \"yenikisi\" to the Email Adress",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"yenikisi\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToTheEmailAdress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter \"12345678\" to the Phone Number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePhoneNumber(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enter \"Yeni123\" to the Password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yeni123\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter \"123\" to the Password Confirmation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userEnterToThePasswordConfirmation(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user select a \"FEMALE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FEMALE\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userSelectA(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user select \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userSelect(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click \"Save\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Save\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userClick(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should be able to see new user with \"\u003cemailadress\u003e\" under the User List",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cemailadress\u003e\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.ticketProject.step_definitions.UserListStepDefs.userShouldBeAbleToSeeNewUserWithUnderTheUserList(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userCreate"
+          }
+        ]
+      }
+    ],
+    "name": "Create New User",
+    "description": "",
+    "id": "create-new-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/userCreate.feature",
+    "tags": [
+      {
+        "name": "@userCreate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

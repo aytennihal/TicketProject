@@ -28,6 +28,15 @@ public class UserListPage extends BasePage {
     @FindBy(xpath = "//*[@type='submit']")
     public WebElement saveButton;
 
+    @FindBy(xpath = "//*[contains(text(),'Please enter email.')]")
+    public WebElement mailerrorMessage;
+
+    @FindBy(xpath = "//*[contains(text(),'Please enter 10 digit mobile number.')]")
+    public WebElement numberErrorMessage;
+
+    @FindBy(xpath = "//*[@class='panel']")
+    public WebElement userlListPanel;
+
     public WebElement selectedRole(String role) {
 
         WebElement selectedRole;
@@ -42,9 +51,32 @@ public class UserListPage extends BasePage {
 
         WebElement selectedGender;
 
-        selectedGender = Driver.get().findElement(By.xpath("//*[@class='custom-control-label'][contains(text(),'"+gender+"')]"));
+        selectedGender = Driver.get().findElement(By.xpath("//*[@class='custom-control-label'][contains(text(),'" + gender + "')]"));
         selectedGender.click();
 
         return selectedGender;
     }
+
+    public WebElement selectedUserDelete(String emailname) {
+
+        WebElement deletebutton;
+        deletebutton = Driver.get().findElement(By.xpath("//*[@class='table-responsive']//*[contains(text(),'" + emailname + "')]"));
+        return deletebutton;
+
+    }
+
+    public WebElement selectedUser(String emailname) {
+
+        WebElement selectedUser;
+
+        selectedUser = Driver.get().findElement(By.xpath("//*[contains(text(),'" + emailname + "')]"));
+
+        return selectedUser;
+
+
+    }
+
+
+
+
 }

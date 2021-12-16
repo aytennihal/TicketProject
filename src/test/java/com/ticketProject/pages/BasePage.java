@@ -17,6 +17,9 @@ public class BasePage {
     @FindBy(xpath = "//*[@href='/admin/user-create']")
     public WebElement userCreateButton;
 
+    @FindBy(xpath = "//*[@href='/admin/project-create']")
+    public WebElement projectCreateButton;
+
 
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);

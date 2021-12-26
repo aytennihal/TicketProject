@@ -38,7 +38,7 @@ public class ProjectCreateStepDesf {
     }
 
     @And("user select {string} from select Tab")
-    public void userSelectFromSelectTab(String tab) {
+    public void userSelectFromSelectTab(String manager) {
         projectPage.assignedManager.click();
     }
 

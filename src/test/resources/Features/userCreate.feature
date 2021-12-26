@@ -17,13 +17,13 @@ Scenario Outline: User can create new user with valid credentials on User List
   And user select a "<gender>"
   And user select "<role>"
   And user click "Save"
-  Then user should be able to see new user with "<emailadress>" under the User List
+  Then user should be able to see new user with "<emailAddress>" under the User List
 
   Examples:
 
     | firstName         | lastName | emailAddress             | phoneNumber | password  | passwordConfirmation | gender | role     |
     | Ayten Nihal       | Cengiz   | aytennihal1998@gmail.com | 5534304671 | Ayten1998.    | Ayten1998.               | Female | Employee |
-    | Mustafa Alparslan | Cengiz   | mustafa@gmail.com        | 5534304672 | MAC123456. | MAC123456.           | Male   | Employee |
+    | Mustafa Alparslan | Cengiz   | mustafa@gmail.com        | 5534304672 | Mac123456. | Mac123456.           | Male   | Employee |
     | Yeni              |   hey       | yenikisi@gmail.com    | 1234567816  | Yeni123.   | Yeni123.             | Female |   Admin       |
 
 
@@ -51,8 +51,8 @@ Scenario Outline: User can delete any user on User List
   And user select a "<gender>"
   And user select "<role>"
   And user click "Save"
-  When user click delete button next to user "mustafa@gmail.com"
-  Then user should not see "mustafa@gmail.com" in user list anymore
+  When user click delete button next to user "<emailAddress>"
+  Then user should not see "<emailAddress>" in user list anymore
 
   Examples:
 

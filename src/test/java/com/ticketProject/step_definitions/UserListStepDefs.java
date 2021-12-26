@@ -10,6 +10,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.bytebuddy.asm.Advice;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
@@ -110,22 +111,31 @@ public class UserListStepDefs {
         }
 
         @And("user click {string}")
-        public void userClick (String button){
+        public void userClick (String button) throws InterruptedException {
 
             switch (button) {
                 case "Save":
                     userListPage.saveButton.click();
                     break;
-            }
 
+            }
+            Thread.sleep(5000);
 
         }
 
         @Then("user should be able to see new user with {string} under the User List")
         public void userShouldBeAbleToSeeNewUserWithUnderTheUserList (String emailAdress){
 
-            Assert.assertTrue("Verify that new user is created",
-                    userListPage.selectedUser(emailAdress).isDisplayed());        }
+            BrowserUtils.waitFor(3);
+
+           // Assert.assertTrue("User is displayed", userListPage.selectedUser(emailAdress).isDisplayed());
+            boolean test = userListPage.selectedUser(emailAdress).isDisplayed();
+            if (test) {
+                System.out.println("User is displayed");
+            } else {
+                System.out.println("User is NOT displayed");
+            }
+            }
 
         @Given("user on user create page")
         public void userOnUserCreatePage () {
@@ -166,6 +176,7 @@ public class UserListStepDefs {
 
     @When("user enter invalid {string} to  the Phone Number")
     public void userEnterInvalidToThePhoneNumber(String invalidPhoneNumber) {
+
        userListPage.phoneNumberButton.sendKeys(invalidPhoneNumber);
        userListPage.saveButton.click();
     }

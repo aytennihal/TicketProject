@@ -7,19 +7,17 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProjectPage extends BasePage{
 
-@FindBy (xpath = "//*[@id='projectName']")
+@FindBy (xpath = "//*[@id='projectname']")
     public WebElement projectName;
 
-    @FindBy (xpath = "//*[@id='projectCode']")
+    @FindBy (xpath = "//*[@id='projectcode']")
     public WebElement projectCode;
 
-@FindBy (xpath = "//*[contains(text(),'Select')]")
-    public WebElement assignedManager;
 
-@FindBy(xpath = "//*[@type='date'][1]")
+@FindBy(xpath = "//*[@id='startDate']")
     public WebElement startDate;
 
-@FindBy(xpath = "//*[@type='date'][2]")
+@FindBy(xpath = "//*[@id='endDate']")
     public WebElement endDate;
 
 @FindBy(xpath = "//textarea[@class='form-control']")
@@ -28,18 +26,13 @@ public class ProjectPage extends BasePage{
 @FindBy(xpath = "//*[@type='submit']")
     public WebElement saveButton;
 
-    //public WebElement selectedAdministration(String role) {
-
-    // WebElement selected;
-
-      //  selected = Driver.get().findElement(By.xpath("//*[@class='custom-select']//*[contains(text(),'" + role + "')]"));
-
-      //  return selected;
+    public WebElement selectedManager(String role) {
 
 
 
+        return Driver.get().findElement(By.xpath("//*[@id='assignedManager']//*[contains(text(),'"+role+"')]"));
 
-
+    }
 
 
 }

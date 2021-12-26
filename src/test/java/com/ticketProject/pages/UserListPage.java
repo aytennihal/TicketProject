@@ -52,7 +52,6 @@ public class UserListPage extends BasePage {
         WebElement selectedGender;
 
         selectedGender = Driver.get().findElement(By.xpath("//*[@class='custom-control-label'][contains(text(),'" + gender + "')]"));
-        selectedGender.click();
 
         return selectedGender;
     }
@@ -60,16 +59,16 @@ public class UserListPage extends BasePage {
     public WebElement selectedUserDelete(String emailname) {
 
         WebElement deletebutton;
-        deletebutton = Driver.get().findElement(By.xpath("//*[@class='table-responsive']//*[contains(text(),'" + emailname + "')]"));
+        deletebutton = Driver.get().findElement(By.xpath("//a[@href='/admin/user-delete/"+emailname+"']//button[contains(text(), 'Delete')]"));
         return deletebutton;
 
     }
 
-    public WebElement selectedUser(String emailname) {
+    public WebElement selectedUser(String emailAdress) {
 
         WebElement selectedUser;
 
-        selectedUser = Driver.get().findElement(By.xpath("//*[contains(text(),'" + emailname + "')]"));
+        selectedUser = Driver.get().findElement(By.xpath("//*[contains(text(),'"+emailAdress+"')]"));
 
         return selectedUser;
 
